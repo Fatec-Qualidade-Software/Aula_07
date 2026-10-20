@@ -50,7 +50,7 @@ class ProdutoServiceTest {
     assertThrows(EstoqueInsuficienteException.class, () -> {
       service.reservarEstoque(1L, 100);
     });
-
+// Alteração para validação de PR e esteira de CI
     verify(estoqueClient, times(1)).reservar(1L, 100);
   }
 }
