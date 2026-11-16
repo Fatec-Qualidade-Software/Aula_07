@@ -70,6 +70,17 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- Plugin do Checkstyle (Análise Estática) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>sun_checks.xml</configLocation>
+                    <encoding>UTF-8</encoding>
+                    <consoleOutput>true</consoleOutput>
+                    <failsOnError>false</failsOnError>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
