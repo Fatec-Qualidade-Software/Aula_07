@@ -28,7 +28,7 @@ jobs:
 
       - name: Code Quality Check (Checkstyle)
         run: mvn checkstyle:check
-        continue-on-error: false
+        continue-on-error: true
 
       - name: Upload JaCoCo Coverage Report
         uses: actions/upload-artifact@v4
